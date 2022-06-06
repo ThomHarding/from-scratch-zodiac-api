@@ -18,6 +18,21 @@ describe('from-scratch-zodiac-api routes', () => {
     expect(res.body).toEqual(expected);
   });
 
+
+  it('/zodiacs/:id should return zodiac detail', async () => {
+    const res = await request(app).get('/zodiacs/1');
+    const felix = {
+      id: '1',
+      name: 'aquarius',
+      type: 'Tuxedo',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Felix_the_zodiac.svg/200px-Felix_the_zodiac.svg.png',
+      year: 1892,
+      lives: 3,
+      isSidekick: false,
+    };
+    expect(res.body).toEqual(felix);
+  });
+
   afterAll(() => {
     pool.end();
   });
