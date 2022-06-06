@@ -10,7 +10,7 @@ describe('from-scratch-zodiac-api routes', () => {
     return setup(pool);
   });
 
-  it('/cats should return a list of cats', async () => {
+  it('/zodiacs should return a list of zodiacs', async () => {
     const res = await request(app).get('/zodiacs');
     const expected = zodiacs.map((zodiac) => {
       return { id: zodiac.id, name: zodiac.name };

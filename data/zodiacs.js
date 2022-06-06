@@ -14,7 +14,8 @@ const zodiacs = [
     dates:'Jun 21 - Jul 22',
     symbol:'Crab'
   },
-  { id:'4', name:'capricorn',
+  { id:'4',
+    name:'capricorn',
     dates:'Dec 22 - Feb 19',
     symbol:'Goat'
   },
@@ -29,7 +30,8 @@ const zodiacs = [
     symbol:'Lion'
   },
   { id:'7',
-    name:'libra', dates:'Sept 23 - Oct 22',
+    name:'libra',
+    dates:'Sept 23 - Oct 22',
     symbol:'Balance'
   },
   { id:'8',
